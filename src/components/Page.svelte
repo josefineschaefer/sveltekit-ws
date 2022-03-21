@@ -4,7 +4,7 @@ import { storyblokEditable, StoryblokComponent } from "@storyblok/svelte";
 export let blok;
 </script>
 
-<div use:storyblokEditable={blok} class="px-6">
+<div use:storyblokEditable={blok}>
   {#each blok.body as blok }
     <StoryblokComponent {blok} />
   {/each}

@@ -4,6 +4,6 @@ import { storyblokEditable } from "@storyblok/svelte";
 export let blok;
 </script>
 
-<div use:storyblokEditable={blok} class="py-2">
-  <h1 class="text-lg">{ blok.name }</h1>
+<div use:storyblokEditable={blok}>
+  <h2>{ blok.name }</h2>
 </div>

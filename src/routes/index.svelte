@@ -19,7 +19,9 @@
     export let story;
   
     onMount(() => {
-      useStoryblokBridge(story.id, (newStory) => (story = newStory));
+      useStoryblokBridge(story.id, (newStory) => (story = newStory),{
+        resolveRelations: ['globalreference.reference'],
+      });
     });
   </script>
   

@@ -4,6 +4,8 @@
 	import Grid from '../components/Grid.svelte';
 	import Page from '../components/Page.svelte';
 	import Teaser from '../components/Teaser.svelte';
+    import Newslettersection from '../components/Newslettersection.svelte';
+    import Globalreference from '../components/Globalreference.svelte';
 
 	storyblokInit({
 		accessToken: 'GGaLDiz35bT8i0WlqsG8SAtt',
@@ -12,11 +14,18 @@
 			feature: Feature,
 			grid: Grid,
 			page: Page,
-			teaser: Teaser
+			teaser: Teaser, 
+            newslettersection: Newslettersection,
+            globalreference: Globalreference
 		}
 	});
 </script>
 
-<main>
+<script>
+      import "../app.css";
+</script>
+
+<main class="container mx-auto my-6 max-w-lg">
 	<slot />
+	<!-- <Newslettersection {blok}/> -->
 </main>

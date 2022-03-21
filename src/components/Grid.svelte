@@ -4,9 +4,9 @@ import { storyblokEditable, StoryblokComponent } from "@storyblok/svelte";
 export let blok;
 </script>
 
-<div use:storyblokEditable={blok} class="flex py-8 mb-6">
+<div use:storyblokEditable={blok}>
   {#each blok.columns as blok }
-    <div class="flex-auto px-6">
+    <div>
       <StoryblokComponent {blok} />
     </div>
   {/each}
